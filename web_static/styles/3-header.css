@@ -1,14 +1,10 @@
 /* styles/3-header.css */
 header {
-    background-color: #FF0000; /* Red color */
+    background-color: #FF0000;
     height: 70px;
     width: 100%;
+    color: white;
+    text-align: center;
+    line-height: 70px; /* Center text vertically */
     border-bottom: 1px solid #CCCCCC;
-}
-
-header .logo {
-    padding-left: 20px; /* 20px space from left */
-    display: flex;
-    align-items: center; /* Vertically center the logo */
-    height: 100%;
 }
