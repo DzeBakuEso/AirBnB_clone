@@ -1,0 +1,14 @@
+/* styles/3-header.css */
+header {
+    background-color: #FF0000; /* Red color */
+    height: 70px;
+    width: 100%;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+header .logo {
+    padding-left: 20px; /* 20px space from left */
+    display: flex;
+    align-items: center; /* Vertically center the logo */
+    height: 100%;
+}
