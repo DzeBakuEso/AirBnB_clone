@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirBnB Clone - Responsive Design</title>
+    <link rel="stylesheet" href="styles/102-common.css">
+    <link rel="stylesheet" href="styles/102-header.css">
+    <link rel="stylesheet" href="styles/102-footer.css">
+    <link rel="stylesheet" href="styles/102-filters.css">
+    <link rel="stylesheet" href="styles/102-places.css">
+</head>
+<body>
+    <header>
+        <div class="logo">AirBnB</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Places</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="filters">
+            <div class="locations">
+                <h3>States</h3>
+                <h4>Select a state</h4>
+            </div>
+            <div class="amenities">
+                <h3>Amenities</h3>
+                <h4>Select amenities</h4>
+            </div>
+            <button>Search</button>
+        </section>
+
+        <section class="places">
+            <h1>Places</h1>
+            <div class="places-container">
+                <article class="place-item">
+                    <h2>Beach House</h2>
+                    <div class="price_by_night">$250/night</div>
+                    <div class="information">
+                        <div class="max_guest"><p>4 Guests</p></div>
+                        <div class="number_rooms"><p>2 Bedrooms</p></div>
+                        <div class="number_bathrooms"><p>2 Bathrooms</p></div>
+                    </div>
+                    <div class="user"><strong>Owner:</strong> Jane Doe</div>
+                </article>
+
+                <article class="place-item">
+                    <h2>Mountain Cabin</h2>
+                    <div class="price_by_night">$180/night</div>
+                    <div class="information">
+                        <div class="max_guest"><p>6 Guests</p></div>
+                        <div class="number_rooms"><p>3 Bedrooms</p></div>
+                        <div class="number_bathrooms"><p>2 Bathrooms</p></div>
+                    </div>
+                    <div class="user"><strong>Owner:</strong> John Smith</div>
+                </article>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 AirBnB Clone</p>
+    </footer>
+</body>
+</html>
