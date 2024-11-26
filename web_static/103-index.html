@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirBnB Clone - Accessibility</title>
+    <link rel="stylesheet" href="styles/103-common.css">
+    <link rel="stylesheet" href="styles/103-header.css">
+    <link rel="stylesheet" href="styles/103-footer.css">
+    <link rel="stylesheet" href="styles/103-filters.css">
+    <link rel="stylesheet" href="styles/103-places.css">
+</head>
+<body>
+    <header role="banner">
+        <div class="logo">
+            <a href="#" aria-label="Home - AirBnB" role="link">AirBnB</a>
+        </div>
+        <nav role="navigation" aria-label="Main Navigation">
+            <ul>
+                <li><a href="#" role="link">Home</a></li>
+                <li><a href="#" role="link">Places</a></li>
+                <li><a href="#" role="link">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main" class="container">
+        <section class="filters" aria-labelledby="filters-title">
+            <h2 id="filters-title">Search Filters</h2>
+            <div class="locations">
+                <label for="locations-filter">States:</label>
+                <select id="locations-filter" aria-label="Filter by states">
+                    <option value="california">California</option>
+                    <option value="texas">Texas</option>
+                </select>
+            </div>
+            <div class="amenities">
+                <label for="amenities-filter">Amenities:</label>
+                <select id="amenities-filter" aria-label="Filter by amenities">
+                    <option value="wifi">WiFi</option>
+                    <option value="pool">Pool</option>
+                </select>
+            </div>
+            <button aria-label="Search Places">Search</button>
+        </section>
+
+        <section class="places" aria-labelledby="places-title">
+            <h1 id="places-title">Places</h1>
+            <div class="places-container">
+                <article class="place-item" role="article" aria-labelledby="place1-title">
+                    <h2 id="place1-title">Beach House</h2>
+                    <div class="price_by_night" aria-label="Price per night">$250/night</div>
+                    <div class="information">
+                        <div class="max_guest" aria-label="Maximum guests: 4"><p>4 Guests</p></div>
+                        <div class="number_rooms" aria-label="Number of bedrooms: 2"><p>2 Bedrooms</p></div>
+                        <div class="number_bathrooms" aria-label="Number of bathrooms: 2"><p>2 Bathrooms</p></div>
+                    </div>
+                    <div class="user" aria-label="Owner information"><strong>Owner:</strong> Jane Doe</div>
+                </article>
+
+                <article class="place-item" role="article" aria-labelledby="place2-title">
+                    <h2 id="place2-title">Mountain Cabin</h2>
+                    <div class="price_by_night" aria-label="Price per night">$180/night</div>
+                    <div class="information">
+                        <div class="max_guest" aria-label="Maximum guests: 6"><p>6 Guests</p></div>
+                        <div class="number_rooms" aria-label="Number of bedrooms: 3"><p>3 Bedrooms</p></div>
+                        <div class="number_bathrooms" aria-label="Number of bathrooms: 2"><p>2 Bathrooms</p></div>
+                    </div>
+                    <div class="user" aria-label="Owner information"><strong>Owner:</strong> John Smith</div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <p>&copy; 2024 AirBnB Clone</p>
+    </footer>
+</body>
+</html>
